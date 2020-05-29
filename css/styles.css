@@ -1,9 +1,20 @@
+:root {
+  --orange: rgba(230, 165, 44, 0.975);
+  --dark: #454545;
+}
 body {
-  background-color: #454545;
+  background-color: var(--dark);
   color: #fff;
   padding: 50px 0 0 0;
   z-index: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
+a:hover {
+  text-decoration: none;
 }
 .row-header {
   margin: 0px auto;
@@ -21,7 +32,7 @@ body {
 }
 
 .footer {
-  background-color: rgba(230, 165, 44, 0.975);
+  background-color: var(--orange);
   margin: 0px auto;
   padding: 20px 0;
 }
@@ -29,7 +40,7 @@ body {
 .jumbotron {
   padding: 70px 30px;
   margin: 0 auto;
-  background-color: rgba(230, 165, 44, 0.975);
+  background-color: var(--orange);
   border-radius: 0;
 }
 address {
@@ -38,14 +49,33 @@ address {
 }
 
 .navbar-dark {
-  background-color: #454545;
-  border-bottom: 2px solid rgba(230, 165, 44, 0.975);
-  border-bottom: 2px solid rgba(230, 165, 44, 0.975);
-  border-top: 5px solid rgba(230, 165, 44, 0.975);
+  background-color: var(--dark);
+  border-bottom: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
+  border-top: 5px solid var(--orange);
 }
 .breadcrumb {
-  color: #454545;
+  color: var(--dark);
   background-color: #bab8b8;
   border-radius: 0;
   box-shadow: 0px 0px 3px 0px #6f6f6f;
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-greenish {
+  background-color: #32ad52;
+  color: white;
+}
+
+button {
+  border: none;
+  box-shadow: 0px 0px 3px 0px #6f6f6f;
+}
+.table {
+  background-color: #fff;
+}
+
+.card-body {
+  color: var(--dark);
 }
