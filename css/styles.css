@@ -1,10 +1,12 @@
 :root {
   --orange: rgba(230, 165, 44, 0.975);
   --dark: #454545;
+  --shadow: #6f6f6f;
+  --white: #fff;
 }
 body {
   background-color: var(--dark);
-  color: #fff;
+  color: var(--white);
   padding: 50px 0 0 0;
   z-index: 0;
   box-sizing: border-box;
@@ -58,24 +60,33 @@ address {
   color: var(--dark);
   background-color: #bab8b8;
   border-radius: 0;
-  box-shadow: 0px 0px 3px 0px #6f6f6f;
+  box-shadow: 0px 0px 3px 0px var(--shadow);
 }
 .bg-orange {
   background-color: var(--orange);
 }
 .bg-greenish {
   background-color: #32ad52;
-  color: white;
+  color: var(--white);
 }
 
 button {
   border: none;
-  box-shadow: 0px 0px 3px 0px #6f6f6f;
+  box-shadow: 0px 0px 3px 0px var(--shadow);
 }
 .table {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .card-body {
   color: var(--dark);
+}
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.nav-tabs .nav-link {
+  color: var(--white);
 }
