@@ -90,3 +90,6 @@ button {
 .nav-tabs .nav-link {
   color: var(--white);
 }
+.card-header {
+  color: var(--dark);
+}
